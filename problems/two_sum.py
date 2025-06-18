@@ -16,17 +16,19 @@ Output: [1, 2]
 
 def two_sum(nums, target):
 
-    archive = []
+    archive = {} # hash map
 
-    for num in nums:
+    for position, num in enumerate(nums):
         complement = target - num
-        if complement in archive:
-            result = [num, complement]
-        else:
-            archive.append(num)
-            
-    return result
 
-nums = [2, 7, 11, 15]
-target = 9
-print(two_sum(nums, target))
+        if complement in archive.keys():
+            return [archive[complement], position]
+        
+        archive[num] = position
+
+    return []
+
+# nums = [3, 3]
+# target = 6
+
+# print(two_sum(nums, target))

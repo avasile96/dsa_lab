@@ -6,7 +6,7 @@ from problems.two_sum import two_sum
     ([3, 3], 6, [0, 1]),
     ([1, 2, 3, 4], 5, [[0, 3], [1, 2]]),  # multiple valid answers
     ([-3, 4, 3, 90], 0, [0, 2]),
-    ([10, 5, 2, 3, 7], 9, [1, 2]),
+    ([10, 5, 2, 3, 7], 9, [2, 4]),
 ])
 def test_two_sum(nums, target, expected):
     result = two_sum(nums, target)
@@ -18,4 +18,4 @@ def test_two_sum(nums, target, expected):
 def test_large_input():
     arr = list(range(1, 10001))  # 1 to 10,000
     target = 19999
-    assert sorted(two_sum(arr, target)) == [9997, 9998]
+    assert sorted(two_sum(arr, target)) == [9998, 9999]
