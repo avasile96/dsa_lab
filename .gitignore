@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# pytest cache
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Test output
+coverage/
+*.cover
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
